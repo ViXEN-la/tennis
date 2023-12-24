@@ -1,0 +1,39 @@
+.cart-inner {
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cart-inner h3 {
+    font-weight: 400;
+}
+
+.cart-inner img {
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+}
+
+.cart-inner .remove-btn {
+    background-color: var(--darkred);
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+}
+
+@media screen and (max-width: 450px) {
+    .cart-inner {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .short-info {
+        width: 95%;
+    }
+}

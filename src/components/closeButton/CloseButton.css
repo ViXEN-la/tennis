@@ -1,0 +1,25 @@
+.close-button {
+    z-index: 10001;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    transition: .5s;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-button a {
+    width: 100px;
+    height: 50px;
+    border: 1px solid var(--darkred);
+    color: var(--darkred);
+    background-color: var(--navy);
+    border-radius: 30px;
+}
+

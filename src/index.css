@@ -1,0 +1,36 @@
+:root {
+    font-family: Gernstner Programm FSL,Helvetica,sans-serif;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #111222;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --navy-background: #000B49;
+  --darkred: #9B0000;
+  --highlight: #FF7272;
+  --light: #fffdf495;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+*::selection {
+    color: initial;
+    background-color: var(--highlight);
+}
+
+a::selection {
+    text-decoration: underline solid black;
+}
+

@@ -1,0 +1,48 @@
+.animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 640px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.product-preview {
+    width: 500px;
+    height: 500px;
+    animation: picture .7s ease-out;
+    padding: 20px;
+
+}
+
+.preview-image {
+    width: 400px;
+    height: auto;
+}
+
+@keyframes picture {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .product-preview {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .animation {
+        display: none;
+    }
+}

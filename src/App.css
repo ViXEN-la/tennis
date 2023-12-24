@@ -1,0 +1,25 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-info-section {
+  display: flex;
+}
+
+@media screen and (max-width: 990px) {
+    .main-info-section {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .main-info-section > * {
+        width: 100%;
+    }
+}
